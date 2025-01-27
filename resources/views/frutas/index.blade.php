@@ -30,7 +30,7 @@
     <p>Nombre de la fruta:
         <input type="text" name="fruta" value=
         @if(!$errors->has('fruta'))
-        "{{ old('fruta') }}">
+        "{{ old('fruta') }}" @endif>
         @if ($errors->has('fruta'))
             @foreach ($errors->get('fruta') as $error)
                 <p>{{ $error }}</p>
